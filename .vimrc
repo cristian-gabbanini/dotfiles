@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'pangloss/vim-javascript'
 	Plug 'itchyny/lightline.vim'
 	Plug 'chriskempson/base16-vim'
+  Plug 'w0rp/ale'
 call plug#end()
 
 
@@ -34,6 +35,10 @@ let g:javascript_conceal_super                = "Ω"
 let g:javascript_conceal_arrow_function       = "⇒"
 let g:javascript_conceal_noarg_arrow_function = "🞅"
 let g:javascript_conceal_underscore_arrow_function = "🞅"
+
+let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_fix_on_save = 1
+
 
 set cole=1
 set conceallevel=1
