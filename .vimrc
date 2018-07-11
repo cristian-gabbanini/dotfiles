@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 	Plug 'scrooloose/nerdtree'
-	Plug 'altercation/vim-colors-solarized'
-	Plug 'shougo/vimproc'
+  Plug 'NLKNguyen/papercolor-theme'	
+  Plug 'shougo/vimproc'
 	Plug 'shougo/vimshell'
 	Plug 'pangloss/vim-javascript'
 	Plug 'itchyny/lightline.vim'
@@ -36,7 +36,7 @@ let g:javascript_conceal_arrow_function       = "⇒"
 let g:javascript_conceal_noarg_arrow_function = "🞅"
 let g:javascript_conceal_underscore_arrow_function = "🞅"
 
-let g:ale_fixers = {'javascript': ['prettier']}
+let g:ale_fixers = {'javascript': ['prettier'], 'php': ['prettier']}
 let g:ale_fix_on_save = 1
 
 
@@ -50,5 +50,6 @@ set softtabstop=2
 set expandtab
 
 syntax on
-colorscheme base16-default-dark
+set background=dark
+colorscheme PaperColor 
 
