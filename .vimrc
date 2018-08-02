@@ -36,7 +36,7 @@ let g:javascript_conceal_arrow_function       = "⇒"
 let g:javascript_conceal_noarg_arrow_function = "🞅"
 let g:javascript_conceal_underscore_arrow_function = "🞅"
 
-let g:ale_fixers = {'javascript': ['prettier'], 'php': ['prettier']}
+let g:ale_fixers = {'json': ['prettier'], 'javascript': ['prettier'], 'scss': ['prettier'], 'php': ['prettier']}
 let g:ale_fix_on_save = 1
 
 
