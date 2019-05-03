@@ -17,6 +17,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <silent> <C-n> :NERDTreeFocus<CR>
 map <silent> <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+let NERDTreeWinPos = "right"
 
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
