@@ -6,7 +6,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'pangloss/vim-javascript'
 	Plug 'itchyny/lightline.vim'
 	Plug 'chriskempson/base16-vim'
-  Plug 'w0rp/ale'
+  Plug 'SirVer/ultisnips'
+  Plug 'honza/vim-snippets'
 call plug#end()
 
 
@@ -37,11 +38,14 @@ let g:javascript_conceal_noarg_arrow_function = "🞅"
 let g:javascript_conceal_underscore_arrow_function = "🞅"
 
 
-let g:ale_fixers = {'json': ['prettier'], 'javascript': ['prettier'], 'scss': ['prettier'], 'php': ['prettier']}
-let g:ale_fix_on_save = 1
+let g:UltiSnipsEpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
+let g:UltiSnipsEditSplit="vertical"
 
-set cole=1
+let g:UltiSnipsSnippetDirectories=[$HOME.'/vim-snippets']
+
 set conceallevel=1
 set laststatus=2
 set t_Co=256
