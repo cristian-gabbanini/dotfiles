@@ -15,6 +15,16 @@ call plug#end()
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Opens the terminal in a vertical window
+nnoremap <C-t> :vert term<Cr>
+
+" Remaps to CTRL + h|j|k|l moving throu split windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+
 map <silent> <C-n> :NERDTreeFocus<CR>
 map <silent> <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
