@@ -13,12 +13,16 @@ show_arrow() {
 }
 
 # Aliases
+alias gcd="git clone https://github.com/cristian-gabbanini/dotfiles.git"
+alias ll="ls -al"
 alias gs="git status"
 alias gl="git lol"
 alias vd="vagrant destroy"
 alias vi="vagrant init"
 alias vu="vagrant up"
 alias vs="vagrant ssh"
+alias vh="vagrant halt"
+
 
 export ps1="\u@\h \w\[\033[32m\]\$(parse_git_branch)\$(show_arrow)[\033[00m\]"
 source /usr/local/etc/bash_completion.d/git-completion.bash
